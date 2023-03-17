@@ -10,6 +10,7 @@ html {
 
 body {
     margin-top: 25px;
+    font-family: roboto-regular, arial, sans-serif;;
 }
 
 nav {
@@ -28,7 +29,7 @@ nav {
     line-height: 1.7;
     font-weight: 300;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .nav_item:hover {
@@ -40,8 +41,19 @@ nav ul li:first-child {
 }
 
 .img_box {
+    position: relative;
     text-align: center;
+    margin-top: 60px;
     margin-bottom: 25px;
+}
+
+.img_box span {
+    color: #4285f4;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    position: absolute;
+    bottom: -6px;
+    transform: translateX(-60px);
 }
 
 form > * {
@@ -52,9 +64,22 @@ form > * {
 .search_input {
     margin-bottom: 30px;
     height: 45px;
-    width: 500px;
+    width: 550px;
     border: 1px solid rgba(0, 0, 0, 0.284);
     border-radius: 25px;
+    padding: 0 40px;
+}
+
+.search_input:focus {
+    border: none;
+    outline: 1px solid rgba(0, 0, 0, 0.284);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.284);
+}
+
+.search_input:hover {
+    border: none;
+    outline: 1px solid rgba(0, 0, 0, 0.284);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.284);
 }
 
 .search_submit {
@@ -102,4 +127,8 @@ form > * {
 
 .footer_list li:not(:last-child) {
     margin-right: 10px;
+}
+
+.form_input {
+    width: 300px;
 }
