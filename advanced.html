@@ -16,165 +16,224 @@
     <div>
         <label>Advanced Search</label>
     </div>
-    <form>
-        <p>Find pages with...</p>
-        <div class="form_box">
-            <div class="form_group">
-                <label for="" class="form_label">all these words:</label>
-                <input type="text" class="form_input">
+    <main>
+        <form>
+            <p>Find pages with...</p>
+            <div class="form_box">
+                <div class="form_group">
+                    <label for="" class="form_label">all these words:</label>
+                    <input type="text" class="form_input">
+                </div>
+                <div class="form_group">
+                    <label for="" class="form_label">this exact word or phrase</label>
+                    <input type="text" class="form_input">
+                </div>
+                <div class="form_group">
+                    <label for="" class="form_label">any of these words:</label>
+                    <input type="text" class="form_input">
+                </div>
+                <div class="form_group">
+                    <label for="" class="form_label">none of these words:</label>
+                    <input type="text" class="form_input">
+                </div>
+                <div class="form_group">
+                    <label for="" class="form_label">numbers ranging from:</label>
+                    <input type="text" class="form_input">
+                    <label for="" class="form_label">  to  </label>
+                    <input type="text" class="form_input">
+                </div>
             </div>
-            <div class="form_group">
-                <label for="" class="form_label">this exact word or phrase</label>
-                <input type="text" class="form_input">
+        </form>
+    
+        <form>
+            <p>Then narrow your results by...</p>
+            <div class="form_box">
+                <div class="form_group">
+                    <label for="language" class="form_label">language:</label>
+                    <select name="language" id="language" class="form_input">
+                        <option value="any language">any language</option>
+                        <option value="Afrikaans">Afrikaans</option>
+                        <option value="Armenian">Armenian</option>
+                        <option value="Belarusian">Belarusian</option>
+                        <option value="Bulgarian">Bulgarian</option>
+                        <option value="Catalan">Catalan</option>
+                        <option value="Chinese (Simplified)">Chinese (Simplified)</option>
+                        <option value="Chinese (Traditional)">Chinese (Traditional)</option>
+                        <option value="Crotian">Crotian</option>
+                        <option value="Czech">Czech</option>
+                        <option value="Danish">Danish</option>
+                        <option value="Dutch">Dutch</option>
+                        <option value="English">English</option>
+                        <option value="Esperanto">Esperanto</option>
+                        <option value="Filipino">Filipino</option>
+                        <option value="Finnish">Finnish</option>
+                        <option value="French">French</option>
+                        <option value="German">German</option>
+                        <option value="Greek">Greek</option>
+                        <option value="Hebrew">Hebrew</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Hungarian">Hungarian</option>
+                        <option value="Icelandic">Icelandic</option>
+                        <option value="Indonesian">Indonesian</option>
+                        <option value="Italian">Italian</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Korean">Korean</option>
+                        <option value="Latvian">Latvian</option>
+                        <option value="Lithuanian">Lithuanian</option>
+                        <option value="Norwegian">Norwegian</option>
+                        <option value="Persian">Persian</option>
+                        <option value="Filipino">Filipino</option>
+                        <option value="Polish">Polish</option>
+                        <option value="Portuguese">Portuguese</option>
+                        <option value="Russian">Russian</option>
+                        <option value="Serbian">Serbian</option>
+                        <option value="Slovak">Slovak</option>
+                        <option value="Slovenian">Slovenian</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Swahili">Swahili</option>
+                        <option value="Swedish">Swedish</option>
+                        <option value="Thai">Thai</option>
+                        <option value="Turkish">Turkish</option>
+                        <option value="Ukranian">Ukranian</option>
+                        <option value="Vietnamese">Vietnamese</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="language" class="form_label">language:</label>
+                    <select name="language" id="language" class="form_input">
+                        <option value="any language">any language</option>
+                        <option value="Afrikaans">Afrikaans</option>
+                        <option value="Armenian">Armenian</option>
+                        <option value="Belarusian">Belarusian</option>
+                        <option value="Bulgarian">Bulgarian</option>
+                        <option value="Catalan">Catalan</option>
+                        <option value="Chinese (Simplified)">Chinese (Simplified)</option>
+                        <option value="Chinese (Traditional)">Chinese (Traditional)</option>
+                        <option value="Crotian">Crotian</option>
+                        <option value="Czech">Czech</option>
+                        <option value="Danish">Danish</option>
+                        <option value="Dutch">Dutch</option>
+                        <option value="English">English</option>
+                        <option value="Esperanto">Esperanto</option>
+                        <option value="Filipino">Filipino</option>
+                        <option value="Finnish">Finnish</option>
+                        <option value="French">French</option>
+                        <option value="German">German</option>
+                        <option value="Greek">Greek</option>
+                        <option value="Hebrew">Hebrew</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Hungarian">Hungarian</option>
+                        <option value="Icelandic">Icelandic</option>
+                        <option value="Indonesian">Indonesian</option>
+                        <option value="Italian">Italian</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Korean">Korean</option>
+                        <option value="Latvian">Latvian</option>
+                        <option value="Lithuanian">Lithuanian</option>
+                        <option value="Norwegian">Norwegian</option>
+                        <option value="Persian">Persian</option>
+                        <option value="Filipino">Filipino</option>
+                        <option value="Polish">Polish</option>
+                        <option value="Portuguese">Portuguese</option>
+                        <option value="Russian">Russian</option>
+                        <option value="Serbian">Serbian</option>
+                        <option value="Slovak">Slovak</option>
+                        <option value="Slovenian">Slovenian</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Swahili">Swahili</option>
+                        <option value="Swedish">Swedish</option>
+                        <option value="Thai">Thai</option>
+                        <option value="Turkish">Turkish</option>
+                        <option value="Ukranian">Ukranian</option>
+                        <option value="Vietnamese">Vietnamese</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="language" class="form_label">last update:</label>
+                    <select name="language" id="language" class="form_input">
+                        <option value="anytime">anytime</option>
+                        <option value="past 24 hours">past 24 hours</option>
+                        <option value="past week">past week</option>
+                        <option value="past month">past month</option>
+                        <option value="pastb year">past year</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="language" class="form_label">last update:</label>
+                    <select name="language" id="language" class="form_input">
+                        <option value="anywhere in the page">anywhere in the page</option>
+                        <option value="in the title of the page">in the title of the page</option>
+                        <option value="in the text of the page">in the text of the page</option>
+                        <option value="in the URL of the page">in the URL of the page</option>
+                        <option value="in links to the page">in links to the page</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="language" class="form_label"><a href="">SafeSearch</a></label>
+                    <select name="language" id="language" class="form_input">
+                        <option value="show explicit results">show explicit results</option>
+                        <option value="Hide explicit results">Hide explicit results</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="language" class="form_label">file type</label>
+                    <select name="language" id="language" class="form_input">
+                        <option value="any format">any format</option>
+                        <option value="Adobe Acrobat">Adobe Acrobat PDF (.pdf)</option>
+                        <option value="Adobe Postscript">Adobe Postscript (.ps)</option>
+                        <option value="Autodest DWF">Autodest DWF (.dwf)</option>
+                        <option value="Google Earth KML">Google Earth KML (.kml)</option>
+                        <option value="Google Earth KMZ">Google Earth KMZ (.kmz)</option>
+                        <option value="Microsoft Excel">Microsoft Excel (.xls)</option>
+                        <option value="Microsoft Power Point">Microsoft Power Point (.ppt)</option>
+                        <option value="Microsoft Word">Microsoft Word (.doc)</option>
+                        <option value="Rich Text Format">Rich Text Format (.rtf)</option>
+                        <option value="Shockwave Flash">Shockwave Flash (.swf)</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="language" class="form_label"><a href="">SafeSearch</a></label>
+                    <select name="language" id="language" class="form_input">
+                        <option value="filtered by licence">not filtered by licence</option>
+                        <option value="use or share">free to use or share</option>
+                        <option value="even commercially">free to use or share, even commercially</option>
+                        <option value="modify">free to use or share or modify</option>
+                        <option value="modify even commercially">free to use or share or modify, even commercially</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <a href="" class="form_submit">Advanced Search</a>
+                    </select>
+                </div>
             </div>
-            <div class="form_group">
-                <label for="" class="form_label">any of these words:</label>
-                <input type="text" class="form_input">
+        </form>
+    
+        <article>
+            <p>You can also...</p>
+            <div class="link_box">
+                <a href="" class="article_link">Find pages that are similar to a URL</a>
+                <a href="" class="article_link">Search pages that you've visited</a>
+                <a href="" class="article_link">Use operators in the search box</a>
+                <a href="" class="article_link">Customise your search settings</a>
             </div>
-            <div class="form_group">
-                <label for="" class="form_label">none of these words:</label>
-                <input type="text" class="form_input">
-            </div>
-            <div class="form_group">
-                <label for="" class="form_label">numbers ranging from:</label>
-                <input type="text" class="form_input">
-                <label for="" class="form_label">  to  </label>
-                <input type="text" class="form_input">
-            </div>
-        </div>
-    </form>
+        </article>
+    </main>
 
-    <form>
-        <p>Then narrow your results by...</p>
-        <div class="form_box">
-            <div class="form_group">
-                <label for="language" class="form_label">language:</label>
-                <select name="language" id="language" class="form_input">
-                    <option value="any language">any language</option>
-                    <option value="Afrikaans">Afrikaans</option>
-                    <option value="Armenian">Armenian</option>
-                    <option value="Belarusian">Belarusian</option>
-                    <option value="Bulgarian">Bulgarian</option>
-                    <option value="Catalan">Catalan</option>
-                    <option value="Chinese (Simplified)">Chinese (Simplified)</option>
-                    <option value="Chinese (Traditional)">Chinese (Traditional)</option>
-                    <option value="Crotian">Crotian</option>
-                    <option value="Czech">Czech</option>
-                    <option value="Danish">Danish</option>
-                    <option value="Dutch">Dutch</option>
-                    <option value="English">English</option>
-                    <option value="Esperanto">Esperanto</option>
-                    <option value="Filipino">Filipino</option>
-                    <option value="Finnish">Finnish</option>
-                    <option value="French">French</option>
-                    <option value="German">German</option>
-                    <option value="Greek">Greek</option>
-                    <option value="Hebrew">Hebrew</option>
-                    <option value="Hindi">Hindi</option>
-                    <option value="Hungarian">Hungarian</option>
-                    <option value="Icelandic">Icelandic</option>
-                    <option value="Indonesian">Indonesian</option>
-                    <option value="Italian">Italian</option>
-                    <option value="Japanese">Japanese</option>
-                    <option value="Korean">Korean</option>
-                    <option value="Latvian">Latvian</option>
-                </select>
-            </div>
-            <div class="form_group">
-                <label for="language" class="form_label">language:</label>
-                <select name="language" id="language" class="form_input">
-                    <option value="any language">any language</option>
-                    <option value="Afrikaans">Afrikaans</option>
-                    <option value="Armenian">Armenian</option>
-                    <option value="Belarusian">Belarusian</option>
-                    <option value="Bulgarian">Bulgarian</option>
-                    <option value="Catalan">Catalan</option>
-                    <option value="Chinese (Simplified)">Chinese (Simplified)</option>
-                    <option value="Chinese (Traditional)">Chinese (Traditional)</option>
-                    <option value="Crotian">Crotian</option>
-                    <option value="Czech">Czech</option>
-                    <option value="Danish">Danish</option>
-                    <option value="Dutch">Dutch</option>
-                    <option value="English">English</option>
-                    <option value="Esperanto">Esperanto</option>
-                    <option value="Filipino">Filipino</option>
-                    <option value="Finnish">Finnish</option>
-                    <option value="French">French</option>
-                    <option value="German">German</option>
-                    <option value="Greek">Greek</option>
-                    <option value="Hebrew">Hebrew</option>
-                    <option value="Hindi">Hindi</option>
-                    <option value="Hungarian">Hungarian</option>
-                    <option value="Icelandic">Icelandic</option>
-                    <option value="Indonesian">Indonesian</option>
-                    <option value="Italian">Italian</option>
-                    <option value="Japanese">Japanese</option>
-                    <option value="Korean">Korean</option>
-                    <option value="Latvian">Latvian</option>
-                    <option value="Dutch">Dutch</option>
-                    <option value="English">English</option>
-                    <option value="Esperanto">Esperanto</option>
-                    <option value="Filipino">Filipino</option>
-                    <option value="Finnish">Finnish</option>
-                    <option value="French">French</option>
-                    <option value="German">German</option>
-                    <option value="Greek">Greek</option>
-                    <option value="Hebrew">Hebrew</option>
-                    <option value="Hindi">Hindi</option>
-                    <option value="Hungarian">Hungarian</option>
-                    <option value="Icelandic">Icelandic</option>
-                    <option value="Indonesian">Indonesian</option>
-                    <option value="Italian">Italian</option>
-                    <option value="Japanese">Japanese</option>
-                    <option value="Korean">Korean</option>
-                    <option value="Latvian">Latvian</option>
-                </select>
-            </div>
-            <div class="form_group">
-                <label for="language" class="form_label">language:</label>
-                <select name="language" id="language" class="form_input">
-                    <option value="any language">any language</option>
-                    <option value="Afrikaans">Afrikaans</option>
-                    <option value="Armenian">Armenian</option>
-                </select>
-            </div>
-            <div class="form_group">
-                <label for="" class="form_label">none of these words:</label>
-                <input type="text" class="form_input">
-            </div>
-            <div class="form_group">
-                <label for="language" class="form_label">language:</label>
-                <select name="language" id="language" class="form_input">
-                    <option value="any language">any language</option>
-                    <option value="Afrikaans">Afrikaans</option>
-                    <option value="Armenian">Armenian</option>
-                </select>
-            </div>
-            <div class="form_group">
-                <label for="language" class="form_label">language:</label>
-                <select name="language" id="language" class="form_input">
-                    <option value="any language">any language</option>
-                    <option value="Afrikaans">Afrikaans</option>
-                    <option value="Armenian">Armenian</option>
-                </select>
-            </div>
-            <div class="form_group">
-                <label for="language" class="form_label">language:</label>
-                <select name="language" id="language" class="form_input">
-                    <option value="any language">any language</option>
-                    <option value="Afrikaans">Afrikaans</option>
-                    <option value="Armenian">Armenian</option>
-                </select>
-            </div>
-            <div class="form_group">
-                <label for="language" class="form_label">language:</label>
-                <select name="language" id="language" class="form_input">
-                    <option value="any language">any language</option>
-                    <option value="Afrikaans">Afrikaans</option>
-                    <option value="Armenian">Armenian</option>
-                </select>
-            </div>
+    <footer class="footer">
+        <p class="footer_paragraph">Nigeria</p>
+        <div class="footer_content">
+            <ul class="footer_list">
+                <li><a href="">About</a></li>
+                <li><a href="">Advertising</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">How Search Works</a></li>
+            </ul>
+            <ul class="footer_list">
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Settings</a></li>
+            </ul>
         </div>
-    </form>
+    </footer>
 </body>
 </html>
